@@ -6,17 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK CSS  -->
     <link rel="stylesheet" href="../FILE2/STYLE.CSS">
+    <link rel="stylesheet" href="C:\Users\zeesh\Desktop\GITHUB PROJECT\FILE-PATH/FILE2/STYLE.CSS">
+    <link rel="stylesheet" href="">
     <title>FILE PATH</title>
 </head>
 <body>
     <h1 id="h1">check</h1>
+    <h1 id="h2">check</h1>
     <button id="btn">File One</button>
+    <BUtton id="btn2">FILE TWO</BUtton>
 </body>
 <script>
     let btn =document.getElementById("btn");
-    btn.addEventListener("click", function () {
-    document.getElementById("h1").innerHTML = "file enternel: ../FILE2/STYLE.CSS";
+    btn.addEventListener("click", function one() {
+    document.getElementById("h1").innerHTML = "File Internal : ../FILE2/STYLE.CSS";
         
     })
+    let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click", function  two() {
+            document.getElementById("h2").innerHTML = "File Absolute :C:\Users\zeesh\Desktop\GITHUB PROJECT\FILE-PATH/FILE2/STYLE.CSS";
+
+        })
 </script>
 </html>
